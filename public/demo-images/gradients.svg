@@ -1,0 +1,45 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 灰度渐变 -->
+    <linearGradient id="grayGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#000;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fff;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 彩虹渐变 -->
+    <linearGradient id="rainbowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff0000"/>
+      <stop offset="17%" style="stop-color:#ff7f00"/>
+      <stop offset="33%" style="stop-color:#ffff00"/>
+      <stop offset="50%" style="stop-color:#00ff00"/>
+      <stop offset="67%" style="stop-color:#0000ff"/>
+      <stop offset="83%" style="stop-color:#4b0082"/>
+      <stop offset="100%" style="stop-color:#9400d3"/>
+    </linearGradient>
+    
+    <!-- 冷暖渐变 -->
+    <linearGradient id="tempGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0066cc"/>
+      <stop offset="50%" style="stop-color:#ffffff"/>
+      <stop offset="100%" style="stop-color:#ff6600"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="400" height="300" fill="#f5f5f5"/>
+  
+  <!-- 标题 -->
+  <text x="200" y="25" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">特殊渐变效果</text>
+  
+  <!-- 灰度渐变 -->
+  <rect x="20" y="50" width="360" height="60" fill="url(#grayGrad)" stroke="#333" stroke-width="1"/>
+  <text x="200" y="90" text-anchor="middle" font-size="12" fill="#333">灰度渐变 (0-255)</text>
+  
+  <!-- 彩虹渐变 -->
+  <rect x="20" y="130" width="360" height="60" fill="url(#rainbowGrad)" stroke="#333" stroke-width="1"/>
+  <text x="200" y="170" text-anchor="middle" font-size="12" fill="#333">彩虹渐变</text>
+  
+  <!-- 色温渐变 -->
+  <rect x="20" y="210" width="360" height="60" fill="url(#tempGrad)" stroke="#333" stroke-width="1"/>
+  <text x="200" y="250" text-anchor="middle" font-size="12" fill="#333">色温：冷 → 暖</text>
+</svg>

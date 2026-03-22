@@ -1,0 +1,152 @@
+.rgb-palette {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.rgb-palette h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.description {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.color-display {
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.1s ease;
+}
+
+.color-info {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.rgb-text {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.hex-text {
+  font-size: 20px;
+  opacity: 0.9;
+}
+
+.sliders-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.slider-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.slider-group label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+
+.channel-label {
+  font-size: 18px;
+}
+
+.value {
+  font-size: 16px;
+  color: #666;
+  background: #f0f0f0;
+  padding: 4px 12px;
+  border-radius: 4px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 12px;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+}
+
+.slider-red {
+  background: linear-gradient(to right, #000, #ff0000);
+}
+
+.slider-green {
+  background: linear-gradient(to right, #000, #00ff00);
+}
+
+.slider-blue {
+  background: linear-gradient(to right, #000, #0000ff);
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid #333;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.slider::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid #333;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.tips {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #4CAF50;
+}
+
+.tips h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.tips ul {
+  margin: 0;
+  padding-left: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 8px;
+}
+
+.tips li {
+  color: #555;
+  font-size: 14px;
+}
+
+.tips strong {
+  font-family: monospace;
+  background: #e9ecef;
+  padding: 2px 6px;
+  border-radius: 3px;
+}

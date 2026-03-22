@@ -1,0 +1,40 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="400" height="300" fill="#ffffff"/>
+  
+  <!-- 标题 -->
+  <text x="200" y="25" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">RGB 三原色渐变</text>
+  
+  <!-- 红色渐变 -->
+  <rect x="20" y="50" width="100" height="200"/>
+  <defs>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#000;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff0000;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect x="20" y="50" width="100" height="200" fill="url(#redGrad)"/>
+  <text x="70" y="270" text-anchor="middle" font-size="14" fill="#333">红色</text>
+  
+  <!-- 绿色渐变 -->
+  <rect x="150" y="50" width="100" height="200"/>
+  <defs>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#000;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00ff00;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect x="150" y="50" width="100" height="200" fill="url(#greenGrad)"/>
+  <text x="200" y="270" text-anchor="middle" font-size="14" fill="#333">绿色</text>
+  
+  <!-- 蓝色渐变 -->
+  <rect x="280" y="50" width="100" height="200"/>
+  <defs>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#000;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0000ff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect x="280" y="50" width="100" height="200" fill="url(#blueGrad)"/>
+  <text x="330" y="270" text-anchor="middle" font-size="14" fill="#333">蓝色</text>
+</svg>
