@@ -2,6 +2,7 @@ import { useState } from 'react';
 import RgbPalette from './components/RgbPalette';
 import ImageColorPicker from './components/ImageColorPicker';
 import ImageProcessing from './components/ImageProcessing';
+import EncodingLesson from './components/EncodingLesson';
 import './App.css';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     { id: 'palette', name: 'RGB 调色板', icon: '🎨' },
     { id: 'picker', name: '图片取色器', icon: '🖱️' },
     { id: 'processing', name: '图像处理实验', icon: '🔬' },
+    { id: 'encoding', name: '字符编码课程', icon: '🔤' },
   ];
 
   const renderContent = () => {
@@ -21,6 +23,8 @@ function App() {
         return <ImageColorPicker />;
       case 'processing':
         return <ImageProcessing />;
+      case 'encoding':
+        return <EncodingLesson />;
       default:
         return <RgbPalette />;
     }
