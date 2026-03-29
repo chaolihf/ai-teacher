@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './EncodingLesson.css';
+import KeyboardAnimation from './KeyboardAnimation';
 
 // ASCII 码表（可打印字符）
 const ASCII_TABLE = [];
@@ -452,6 +453,10 @@ function EncodingLesson() {
         return (
           <div className="section-content">
             <h2>⌨️ 键盘输入与编码</h2>
+            
+            {/* 动画演示 */}
+            <KeyboardAnimation />
+            
             <div className="info-card">
               <h3>键盘输入原理</h3>
               <p>
