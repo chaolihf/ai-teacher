@@ -3,6 +3,7 @@ import RgbPalette from './components/RgbPalette';
 import ImageColorPicker from './components/ImageColorPicker';
 import ImageProcessing from './components/ImageProcessing';
 import EncodingLesson from './components/EncodingLesson';
+import FileLesson from './components/FileLesson';
 import './App.css';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     { id: 'picker', name: '图片取色器', icon: '🖱️' },
     { id: 'processing', name: '图像处理实验', icon: '🔬' },
     { id: 'encoding', name: '字符编码课程', icon: '🔤' },
+    { id: 'files', name: '文件系统课程', icon: '📁' },
   ];
 
   const renderContent = () => {
@@ -25,6 +27,8 @@ function App() {
         return <ImageProcessing />;
       case 'encoding':
         return <EncodingLesson />;
+      case 'files':
+        return <FileLesson />;
       default:
         return <RgbPalette />;
     }
