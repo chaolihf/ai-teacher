@@ -1,0 +1,38 @@
+{
+  "modelProviders": {
+    "openai": [
+      {
+        "id": "Qwen3.5-27B",
+        "name": "Qwen3.5-27B",
+        "baseUrl": "http://134.84.204.27:11436/v1",
+        "description": "Qwen3.5-27B Local",
+        "envKey": "DASHSCOPE_API_KEY"
+      }
+    ]
+  },
+  "env": {
+    "DASHSCOPE_API_KEY": "sk-DMSgAtccIdD1XbmCSQhZIj3t8Y2YilibWpthQN7xC2kHhbGz"
+  },
+  "security": {
+    "auth": {
+      "selectedType": "openai"
+    }
+  },
+  "model": {
+    "name": "Qwen3.5-27B"
+  },
+  "$version": 3,
+  "permissions": {
+    "allow": [
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(gradlew *)",
+      "Bash(git push *)",
+      "Bash(dir *)",
+      "Bash(find *)",
+      "WebFetch(archive.apache.org)",
+      "Bash(copy *)",
+      "Bash(npm run *)"
+    ]
+  }
+}

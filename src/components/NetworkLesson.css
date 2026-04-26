@@ -1,0 +1,951 @@
+.network-lesson {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.lesson-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.lesson-header h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.lesson-header p {
+  color: #666;
+  font-size: 16px;
+}
+
+/* 分区导航 */
+.section-nav {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border: 2px solid #ddd;
+  border-radius: 25px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.section-btn:hover {
+  border-color: #2196F3;
+  background: #E3F2FD;
+}
+
+.section-btn.active {
+  border-color: #2196F3;
+  background: #2196F3;
+  color: white;
+}
+
+.section-icon {
+  font-size: 18px;
+}
+
+.lesson-content {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 波传输样式 */
+.wave-transmission {
+  margin-bottom: 30px;
+}
+
+.wave-transmission h3 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.wave-controls {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.control-group label {
+  font-size: 14px;
+  color: #555;
+}
+
+.control-group select,
+.control-group input[type="number"] {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.control-group input[type="range"] {
+  width: 150px;
+}
+
+.checkbox-group {
+  flex-direction: row;
+  align-items: center;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.wave-controls button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background: #2196F3;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.wave-controls button:hover {
+  background: #1976D2;
+}
+
+.wave-canvas {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  background: #fafafa;
+}
+
+.wave-info {
+  margin-top: 15px;
+  padding: 15px;
+  background: #E3F2FD;
+  border-radius: 8px;
+  border-left: 4px solid #2196F3;
+}
+
+.wave-info p {
+  margin: 8px 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* 数据包传输样式 */
+.packet-transmission {
+  margin-bottom: 30px;
+}
+
+.packet-transmission h3 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.packet-controls {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.packet-canvas {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  background: #fafafa;
+}
+
+.packet-info {
+  margin-top: 15px;
+  padding: 15px;
+  background: #FFF3E0;
+  border-radius: 8px;
+  border-left: 4px solid #FF9800;
+}
+
+.packet-info p {
+  margin: 8px 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* 网络分层样式 */
+.network-layers {
+  margin-bottom: 30px;
+}
+
+.network-layers h3 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.layers-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.layer {
+  padding: 15px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.layer:hover {
+  transform: translateX(10px);
+}
+
+.layer.active {
+  transform: translateX(10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.layer-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.layer-number {
+  background: rgba(255, 255, 255, 0.3);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.layer-name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.layer-details {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.layer-details p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.layers-info {
+  margin-top: 15px;
+  padding: 15px;
+  background: #F3E5F5;
+  border-radius: 8px;
+  border-left: 4px solid #9C27B0;
+}
+
+.layers-info p {
+  margin: 8px 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* IP 地址样式 */
+.ip-education {
+  margin-bottom: 30px;
+}
+
+.ip-education h3 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.ip-section,
+.subnet-section,
+.network-result {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.ip-section h4,
+.subnet-section h4,
+.network-result h4 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.ip-inputs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.ip-octet {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.ip-octet input {
+  width: 80px;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.ip-octet input:focus {
+  outline: none;
+  border-color: #2196F3;
+}
+
+.ip-octet span {
+  font-size: 18px;
+  color: #666;
+}
+
+.binary-display {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.binary-octet {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.binary-octet code {
+  padding: 8px 12px;
+  background: #333;
+  color: #00FF00;
+  border-radius: 5px;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+}
+
+.binary-octet span {
+  color: #666;
+}
+
+.network-address {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2196F3;
+  text-align: center;
+  padding: 15px;
+  background: #E3F2FD;
+  border-radius: 8px;
+}
+
+.ip-info {
+  margin-top: 15px;
+  padding: 15px;
+  background: #E8F5E9;
+  border-radius: 8px;
+  border-left: 4px solid #4CAF50;
+}
+
+.ip-info p {
+  margin: 8px 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* 无线网络安全 */
+.wireless-network {
+  margin-bottom: 30px;
+}
+
+.wireless-network h3 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.network-types {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.network-type-card {
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.network-type-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.network-type-card.active {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.network-type-card.wifi {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.network-type-card.g4 {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.network-type-card.g5 {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.network-type-card h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.network-type-card .speed {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.network-type-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.network-type-card li {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.signal-strength-container {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+
+.signal-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  height: 60px;
+  margin: 20px 0;
+}
+
+.signal-bar {
+  flex: 1;
+  background: #ddd;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  max-height: 50px;
+}
+
+.signal-bar.active {
+  background: #4CAF50;
+}
+
+.signal-bar.weak {
+  background: #FF5722;
+}
+
+.signal-bar.medium {
+  background: #FFC107;
+}
+
+.signal-bar.strong {
+  background: #4CAF50;
+}
+
+.signal-text {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+.wireless-info {
+  margin-top: 15px;
+  padding: 15px;
+  background: #E1F5FE;
+  border-radius: 8px;
+  border-left: 4px solid #03A9F4;
+}
+
+.wireless-info p {
+  margin: 8px 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* 模数转换样式 */
+.analog-digital {
+  margin-bottom: 30px;
+}
+
+.analog-digital h3 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.ad-converter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.converter-stage {
+  text-align: center;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  min-width: 200px;
+}
+
+.converter-stage h4 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.converter-canvas {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background: white;
+}
+
+.converter-arrow {
+  font-size: 30px;
+  color: #2196F3;
+}
+
+.ad-info {
+  margin-top: 15px;
+  padding: 15px;
+  background: #FCE4EC;
+  border-radius: 8px;
+  border-left: 4px solid #E91E63;
+}
+
+.ad-info p {
+  margin: 8px 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* 网络性能样式 */
+.network-performance {
+  margin-bottom: 30px;
+}
+
+.network-performance h3 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.performance-controls {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.performance-controls button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  background: #4CAF50;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.performance-controls button:hover {
+  background: #388E3C;
+  transform: scale(1.05);
+}
+
+.performance-controls button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.performance-meters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.performance-meter {
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.performance-meter h4 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.meter-value {
+  font-size: 36px;
+  font-weight: bold;
+  color: #2196F3;
+  margin-bottom: 10px;
+}
+
+.meter-unit {
+  font-size: 14px;
+  color: #666;
+}
+
+.meter-bar-container {
+  height: 20px;
+  background: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.meter-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #4CAF50, #8BC34A);
+  transition: width 0.3s ease;
+  border-radius: 10px;
+}
+
+.meter-bar.high {
+  background: linear-gradient(90deg, #FF5722, #FF9800);
+}
+
+.performance-canvas {
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto 20px;
+  background: white;
+}
+
+.performance-info {
+  padding: 15px;
+  background: #FFF8E1;
+  border-radius: 8px;
+  border-left: 4px solid #FFC107;
+}
+
+.performance-info p {
+  margin: 8px 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* 互联网地址样式 */
+.internet-address {
+  margin-bottom: 30px;
+}
+
+.internet-address h3 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.address-demo {
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.url-breakdown {
+  margin-bottom: 20px;
+}
+
+.url-part {
+  display: flex;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  align-items: center;
+  gap: 10px;
+}
+
+.url-part.protocol {
+  background: #E3F2FD;
+  border-left: 4px solid #2196F3;
+}
+
+.url-part.domain {
+  background: #E8F5E9;
+  border-left: 4px solid #4CAF50;
+}
+
+.url-part.path {
+  background: #FFF3E0;
+  border-left: 4px solid #FF9800;
+}
+
+.url-part.query {
+  background: #F3E5F5;
+  border-left: 4px solid #9C27B0;
+}
+
+.url-part code {
+  font-family: 'Courier New', monospace;
+  font-size: 16px;
+  padding: 5px 10px;
+  background: white;
+  border-radius: 3px;
+}
+
+.url-part span {
+  font-size: 14px;
+  color: #666;
+}
+
+.dns-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.dns-step {
+  text-align: center;
+  padding: 15px;
+  background: white;
+  border: 2px solid #2196F3;
+  border-radius: 10px;
+  min-width: 120px;
+}
+
+.dns-step.active {
+  background: #2196F3;
+  color: white;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+.dns-arrow {
+  font-size: 24px;
+  color: #2196F3;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.dns-controls {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.dns-controls input {
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 300px;
+}
+
+.dns-controls button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #2196F3;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dns-controls button:hover {
+  background: #1976D2;
+}
+
+.dns-result {
+  padding: 15px;
+  background: #E8F5E9;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.dns-result code {
+  font-size: 18px;
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+.address-info {
+  margin-top: 15px;
+  padding: 15px;
+  background: #E0F7FA;
+  border-radius: 8px;
+  border-left: 4px solid #00BCD4;
+}
+
+.address-info p {
+  margin: 8px 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* IPv6 样式 */
+.ipv6-section {
+  margin-top: 30px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+
+.ipv6-section h4 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.ipv6-comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.ipv6-comparison .version {
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.ipv6-comparison .v4 {
+  background: #E3F2FD;
+  border: 2px solid #2196F3;
+}
+
+.ipv6-comparison .v6 {
+  background: #E8F5E9;
+  border: 2px solid #4CAF50;
+}
+
+.ipv6-comparison h5 {
+  margin-bottom: 10px;
+}
+
+.ipv6-comparison code {
+  font-size: 16px;
+  padding: 5px 10px;
+  background: white;
+  border-radius: 3px;
+  display: block;
+  margin: 10px 0;
+}
+
+.ipv6-advantages {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ipv6-advantages li {
+  padding: 8px 0;
+  padding-left: 25px;
+  position: relative;
+}
+
+.ipv6-advantages li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .section-nav {
+    flex-direction: column;
+  }
+
+  .section-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .wave-controls,
+  .packet-controls,
+  .performance-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .control-group {
+    width: 100%;
+  }
+
+  .control-group input[type="range"] {
+    width: 100%;
+  }
+
+  .ipv6-comparison {
+    grid-template-columns: 1fr;
+  }
+
+  .ad-converter {
+    flex-direction: column;
+  }
+
+  .converter-arrow {
+    transform: rotate(90deg);
+  }
+
+  .dns-flow {
+    flex-direction: column;
+  }
+
+  .dns-arrow {
+    transform: rotate(90deg);
+  }
+}
