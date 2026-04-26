@@ -4,6 +4,8 @@ import ImageColorPicker from './components/ImageColorPicker';
 import ImageProcessing from './components/ImageProcessing';
 import EncodingLesson from './components/EncodingLesson';
 import FileLesson from './components/FileLesson';
+import NetworkLesson from './components/NetworkLesson';
+import ComputerArithmeticLesson from './components/ComputerArithmeticLesson';
 import './App.css';
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
     { id: 'processing', name: '图像处理实验', icon: '🔬' },
     { id: 'encoding', name: '字符编码课程', icon: '🔤' },
     { id: 'files', name: '文件系统课程', icon: '📁' },
+    { id: 'network', name: '网络课程', icon: '🌐' },
+    { id: 'arithmetic', name: 'CPU 运算原理', icon: '💻' },
   ];
 
   const renderContent = () => {
@@ -29,6 +33,10 @@ function App() {
         return <EncodingLesson />;
       case 'files':
         return <FileLesson />;
+      case 'network':
+        return <NetworkLesson />;
+      case 'arithmetic':
+        return <ComputerArithmeticLesson />;
       default:
         return <RgbPalette />;
     }
@@ -37,8 +45,8 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">
-        <h1>🌈 颜色教学实验室</h1>
-        <p>探索 RGB 色彩的奥秘</p>
+        <h1>💻 计算机基础实验室</h1>
+        <p>探索计算机科学的奥秘</p>
       </header>
 
       <nav className="app-nav">
@@ -59,7 +67,7 @@ function App() {
       </main>
 
       <footer className="app-footer">
-        <p>颜色教学实验室 - 学习 RGB 色彩原理的互动工具</p>
+        <p>计算机基础实验室 - 学习计算机科学原理的互动工具</p>
       </footer>
     </div>
   );

@@ -1,0 +1,1122 @@
+.computer-arithmetic-lesson {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.lesson-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.lesson-header h1 {
+  font-size: 2.5em;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.lesson-header p {
+  font-size: 1.2em;
+  color: #7f8c8d;
+}
+
+.lesson-nav {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 100px;
+}
+
+.nav-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.nav-btn.active {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  box-shadow: 0 5px 15px rgba(245, 87, 108, 0.4);
+}
+
+.nav-icon {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.nav-text {
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.lesson-controls {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.lesson-controls label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.lesson-controls input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.lesson-content {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.section-content h2 {
+  color: #2c3e50;
+  margin-bottom: 25px;
+  font-size: 2em;
+  border-bottom: 3px solid #667eea;
+  padding-bottom: 10px;
+}
+
+.intro-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.info-card {
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+  padding: 25px;
+  border-radius: 12px;
+  border-left: 4px solid #667eea;
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateX(5px);
+}
+
+.info-card h3 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-size: 1.3em;
+}
+
+.info-card p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.info-card ul,
+.info-card ol {
+  color: #555;
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+.info-card li {
+  margin-bottom: 8px;
+}
+
+.info-card strong {
+  color: #667eea;
+}
+
+.visualization {
+  margin: 30px 0;
+  padding: 25px;
+  background: #f8f9fa;
+  border-radius: 12px;
+}
+
+.visualization h3 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.flow-diagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.flow-step {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.step-box {
+  padding: 20px 30px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.1em;
+  min-width: 120px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(102, 126, 234, 0.3);
+}
+
+.flow-arrow {
+  font-size: 2em;
+  color: #667eea;
+  font-weight: bold;
+}
+
+.binary-demo {
+  margin: 30px 0;
+}
+
+.converter {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.converter-side {
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.converter-side label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.converter-side input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.converter-side input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.converter-side .result {
+  color: #555;
+  font-size: 0.95em;
+}
+
+.binary-value,
+.decimal-value {
+  color: #667eea;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.binary-table {
+  margin: 30px 0;
+  overflow-x: auto;
+}
+
+.binary-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.binary-table th {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 15px;
+  font-weight: bold;
+}
+
+.binary-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.binary-table tr:hover {
+  background: #f8f9fa;
+}
+
+.calculation-demo {
+  margin: 30px 0;
+  padding: 25px;
+  background: #f8f9fa;
+  border-radius: 12px;
+}
+
+.calculation-demo h3 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.calc-input {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-group label {
+  font-weight: bold;
+  color: #2c3e50;
+  font-size: 0.9em;
+}
+
+.input-group input {
+  padding: 12px 15px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 1.2em;
+  width: 120px;
+  text-align: center;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.binary-hint {
+  color: #667eea;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+  margin: 0;
+}
+
+.operator {
+  font-size: 2em;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.equals {
+  font-size: 2em;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.result-group {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 15px 20px;
+  border-radius: 8px;
+  color: white;
+}
+
+.result-group label {
+  color: white;
+}
+
+.result-value {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+}
+
+.step-by-step {
+  margin-top: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+}
+
+.step-by-step h4 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.binary-addition {
+  font-family: 'Courier New', monospace;
+  font-size: 1.1em;
+}
+
+.binary-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.binary-row .label {
+  font-weight: bold;
+  min-width: 80px;
+  color: #2c3e50;
+}
+
+.binary-row .binary {
+  font-family: 'Courier New', monospace;
+  background: #f8f9fa;
+  padding: 8px 12px;
+  border-radius: 4px;
+  letter-spacing: 2px;
+}
+
+.binary-row .binary.result {
+  color: #667eea;
+  font-weight: bold;
+}
+
+.binary-row .separator .line {
+  flex: 1;
+  border-top: 2px solid #2c3e50;
+}
+
+.multiplication-explanation {
+  color: #555;
+  line-height: 1.8;
+}
+
+.multiplication-explanation ul {
+  margin: 15px 0;
+  padding-left: 25px;
+}
+
+.multiplication-explanation li {
+  margin-bottom: 10px;
+}
+
+/* ===== Simulation Area (from BinaryCalculator) ===== */
+.simulation-area {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 25px;
+}
+
+.simulation-area h3 {
+  color: #2c3e50;
+  margin-bottom: 25px;
+  font-size: 1.8em;
+  border-bottom: 3px solid #667eea;
+  padding-bottom: 10px;
+}
+
+/* Bits display */
+.bits {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+}
+
+.bit {
+  width: 35px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: 'Courier New', monospace;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bit.result-bit {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+/* Addition / Subtraction Grid */
+.addition-grid,
+.complement-steps,
+.multiplication-grid,
+.division-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.carry-row,
+.number-row,
+.separator-row,
+.result-row,
+.comp-row,
+.mult-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.carry-row span,
+.number-row span,
+.separator-row span,
+.result-row span,
+.comp-row .comp-label,
+.mult-row .mult-label {
+  min-width: 80px;
+  font-weight: bold;
+  color: #2c3e50;
+  font-size: 1em;
+}
+
+.carry-bit,
+.number-bit,
+.separator-bit,
+.result-bit {
+  width: 35px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-size: 1.1em;
+  font-weight: bold;
+  font-family: 'Courier New', monospace;
+  transition: all 0.3s ease;
+}
+
+.carry-bit {
+  background: #f0f0f0;
+  color: #999;
+  font-size: 0.9em;
+  height: 30px;
+}
+
+.carry-bit.shown {
+  background: #667eea;
+  color: white;
+}
+
+.carry-bit.active {
+  background: #f5576c;
+  color: white;
+  transform: scale(1.1);
+}
+
+.number-bit {
+  background: #e0e0e0;
+  color: #666;
+}
+
+.number-bit.shown {
+  background: #4CAF50;
+  color: white;
+}
+
+.number-bit.active {
+  background: #2196F3;
+  color: white;
+  transform: scale(1.1);
+}
+
+.separator-bit {
+  flex: 1;
+  color: #2c3e50;
+  font-size: 1.2em;
+}
+
+.result-bit {
+  background: #e0e0e0;
+  color: #666;
+}
+
+.result-bit.shown {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.result-bit.active {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  transform: scale(1.1);
+}
+
+/* Step Controls */
+.step-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 25px 0;
+  flex-wrap: wrap;
+}
+
+.control-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(102, 126, 234, 0.3);
+}
+
+.control-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(102, 126, 234, 0.4);
+}
+
+.control-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.control-btn.playing {
+  background: linear-gradient(135deg, #f5576c 0%, #f093fb 100%);
+}
+
+.step-indicator {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #2c3e50;
+  min-width: 150px;
+  text-align: center;
+}
+
+/* Step Explanation */
+.step-explanation {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 4px solid #667eea;
+}
+
+.step-explanation h4 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.step-explanation p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 1.1em;
+}
+
+.bit-operation {
+  margin-top: 15px;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+}
+
+.op-bit {
+  font-weight: bold;
+  color: #667eea;
+  margin-right: 10px;
+}
+
+.op-expression {
+  font-family: 'Courier New', monospace;
+  font-size: 1.2em;
+  color: #2c3e50;
+  margin-right: 20px;
+}
+
+.op-result {
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+/* Complement Explanation */
+.complement-explanation {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  border-left: 4px solid #f5576c;
+}
+
+.complement-explanation h4 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.comp-row {
+  margin-bottom: 10px;
+}
+
+.comp-label {
+  min-width: 100px !important;
+}
+
+.comp-note {
+  margin-top: 15px;
+  padding: 10px;
+  background: white;
+  border-radius: 6px;
+  color: #2c3e50;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Multiplication */
+.multiplication-grid {
+  font-family: 'Courier New', monospace;
+}
+
+.mult-row {
+  margin-bottom: 8px;
+}
+
+.partial-product {
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.partial-product.shown {
+  opacity: 1;
+}
+
+.partial-product.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  transform: scale(1.02);
+}
+
+.partial-product .mult-label {
+  color: inherit;
+}
+
+.partial-product .bit {
+  background: rgba(255, 255, 255, 0.3);
+  color: inherit;
+}
+
+.shift-info {
+  margin-left: 15px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.partial-product.active .shift-info {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.result-bits {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 5px;
+  border-radius: 6px;
+}
+
+.result-value {
+  margin-left: 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* Division */
+.division-info {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  text-align: center;
+  border-left: 4px solid #4CAF50;
+}
+
+.division-info p {
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: #2c3e50;
+}
+
+.division-step {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+  border-left: 4px solid #ddd;
+}
+
+.division-step.shown {
+  opacity: 1;
+}
+
+.division-step.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-left-color: #f5576c;
+  transform: translateX(5px);
+}
+
+.step-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.step-number {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.step-content {
+  padding-left: 15px;
+}
+
+.division-expression {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-family: 'Courier New', monospace;
+}
+
+.binary-expression {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 8px;
+  font-family: 'Courier New', monospace;
+}
+
+.division-step.active .binary-expression {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.division-step.active .operator {
+  color: white;
+}
+
+.division-step.active .result {
+  color: #4CAF50;
+}
+
+.step-info {
+  margin-top: 8px;
+  font-size: 0.95em;
+  color: #666;
+}
+
+.division-step.active .step-info {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.explanation-box {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 25px;
+  border-left: 4px solid #667eea;
+}
+
+.explanation-box h4 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.explanation-box p {
+  color: #555;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+/* Principle Box - 运算原理说明 */
+.principle-box {
+  background: linear-gradient(135deg, #e8f4f8 0%, #f0f0ff 100%);
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  border-left: 5px solid #667eea;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.1);
+}
+
+.principle-box h4 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
+.principle-box p {
+  color: #555;
+  line-height: 1.8;
+  margin: 8px 0;
+}
+
+.principle-box ol {
+  color: #555;
+  padding-left: 25px;
+  line-height: 2;
+  margin: 10px 0;
+}
+
+.principle-box ol li {
+  margin-bottom: 5px;
+}
+
+.principle-box strong {
+  color: #667eea;
+}
+
+.principle-example {
+  margin-top: 15px;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.95em;
+  line-height: 1.8;
+  color: #2c3e50;
+  border: 1px solid #e0e0e0;
+}
+
+/* Calc Detail - 当前算式详解 */
+.calc-detail {
+  margin-top: 10px;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.calc-detail-line {
+  padding: 6px 10px;
+  color: #555;
+  font-family: 'Courier New', monospace;
+  font-size: 0.95em;
+  line-height: 1.6;
+  border-left: 3px solid #ddd;
+  margin-bottom: 4px;
+}
+
+.calc-detail-line.result-line {
+  border-left-color: #4CAF50;
+  color: #2c3e50;
+  font-weight: bold;
+  font-size: 1em;
+  margin-top: 8px;
+  padding-top: 10px;
+}
+
+/* CPU Architecture */
+.cpu-architecture {
+  margin: 30px 0;
+}
+
+.cpu-components {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.component {
+  padding: 20px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+  border-radius: 10px;
+  border-left: 4px solid #667eea;
+}
+
+.component h4 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.component p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.instruction-cycle {
+  counter-reset: cycle-counter;
+  list-style: none;
+  padding: 0;
+}
+
+.instruction-cycle li {
+  position: relative;
+  padding: 20px;
+  margin-bottom: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  counter-increment: cycle-counter;
+}
+
+.instruction-cycle li::before {
+  content: counter(cycle-counter);
+  position: absolute;
+  left: -15px;
+  top: -15px;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.instruction-cycle strong {
+  color: #667eea;
+  font-size: 1.1em;
+}
+
+.instruction-cycle p {
+  color: #555;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.process-steps {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  flex-wrap: wrap;
+}
+
+.process-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  min-width: 150px;
+}
+
+.step-number {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(102, 126, 234, 0.3);
+}
+
+.step-content h4 {
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+.step-content p {
+  color: #555;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+.process-arrow {
+  font-size: 2em;
+  color: #667eea;
+  font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+  .bits {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .bit {
+    width: 30px;
+    height: 35px;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .lesson-nav {
+    flex-direction: column;
+  }
+
+  .nav-btn {
+    width: 100%;
+  }
+
+  .flow-step {
+    flex-direction: column;
+  }
+
+  .flow-arrow {
+    transform: rotate(90deg);
+  }
+
+  .calc-input {
+    flex-direction: column;
+  }
+
+  .process-steps {
+    flex-direction: column;
+  }
+
+  .process-arrow {
+    transform: rotate(90deg);
+  }
+
+  .step-controls {
+    flex-direction: column;
+  }
+
+  .control-btn {
+    width: 100%;
+  }
+
+  .carry-row span,
+  .number-row span,
+  .result-row span {
+    min-width: 60px;
+    font-size: 0.9em;
+  }
+
+  .bit {
+    width: 25px;
+    height: 30px;
+    font-size: 0.9em;
+  }
+}
