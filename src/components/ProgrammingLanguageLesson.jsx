@@ -1591,41 +1591,49 @@ function ProgrammingLanguageLesson() {
                   ⏮ 上一步
                 </button>
                 <button
-                  className="exec-btn"
-                  onClick={() => runAsmStep(asmStep >= currentAsm.stops.length - 1 ? currentAsm.stops.length - 1 : asmStep + 1)}
-                  disabled={asmStep >= currentAsm.stops.length - 1}
+                  className="exec-btn exec-btn-primary"
+                  onClick={() => runAsmStep(asmStep < 0 ? 0 : asmStep + 1)}
+                  disabled={asmStep >= currentAsm.steps.length - 1}
                 >
-                  下一步 ⏭
+                  ▶ 下一步
                 </button>
-                <button
-                  className="exec-btn"
-                  onClick={() => { setAsmStep(-1); resetAsm(); }}
-                >
-                  ⟳ 重置
+                <button className="exec-btn" onClick={resetAsm}>
+                  ↺ 重置
                 </button>
               </div>
 
-              {asmStep >= 0 && (
-                <>
-                  <div className="exec-step">
-                    <strong>步骤 {asmStep + 1}：</strong> {currentAsm.stops[asmStep]}
-                  </div>
-                  <div className="register-display">
-                    <div className="reg-row">
-                      {Object.entries(currentAsm.registers[asmStep]).map(([k, v]) => (
-                        <div key={k} className="reg-item">
-                          <span className="reg-name">{k}</span>
-                          <span className="reg-value">{v}</span>
-                        </div>
-                      ))}
+              {/* 当前步骤说明 */}
+              <div className="exec-step-info">
+                {asmStep >= 0 ? (
+                  <>
+                    <div className="step-counter">
+                      步骤 {asmStep + 1} / {currentAsm.steps.length}
                     </div>
-                  </div>
-                </>
-              )}
+                    <div className="step-text">
+                      {currentAsm.steps[asmStep].text}
+                    </div>
+                  </>
+                ) : (
+                  <div className="step-placeholder">点击「下一步」开始执行</div>
+                )}
+              </div>
 
-              {asmStep < 0 && (
-                <div className="register-empty">尚未执行</div>
-              )}
+              {/* 寄存器状态 */}
+              <div className="register-panel">
+                <h4>寄存器 / 变量状态</h4>
+                {Object.keys(registers).length > 0 ? (
+                  <div className="register-grid">
+                    {Object.entries(registers).map(([k, v]) => (
+                      <div key={k} className="register-cell">
+                        <span className="reg-name">{k}</span>
+                        <span className="reg-value">{v}</span>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <div className="register-empty">尚未执行</div>
+                )}
+              </div>
             </div>
           </div>
         </section>
