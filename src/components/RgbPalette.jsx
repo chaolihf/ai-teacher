@@ -13,11 +13,8 @@ function RgbPalette() {
 
   return (
     <div className="rgb-palette">
-      <h2>🎨 RGB 调色板</h2>
-      <p className="description">
-        通过调整下方的滑块，观察不同 RGB 值组合产生的颜色变化。
-        RGB 是红 (Red)、绿 (Green)、蓝 (Blue) 三原色的缩写，每种颜色的取值范围是 0-255。
-      </p>
+      <h1>🎨 小付同学的培训班</h1>
+      <p className="description">通过调整下方的滑块，观察不同 RGB 值组合产生的颜色变化。</p>
       
       <div className="color-display" style={{ backgroundColor, color: textColor }}>
         <div className="color-info">
