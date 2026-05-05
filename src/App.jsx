@@ -6,6 +6,7 @@ import EncodingLesson from './components/EncodingLesson';
 import FileLesson from './components/FileLesson';
 import NetworkLesson from './components/NetworkLesson';
 import ComputerArithmeticLesson from './components/ComputerArithmeticLesson';
+import ProgrammingLanguageLesson from './components/ProgrammingLanguageLesson';
 import './App.css';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
     { id: 'files', name: '文件系统课程', icon: '📁' },
     { id: 'network', name: '网络课程', icon: '🌐' },
     { id: 'arithmetic', name: 'CPU 运算原理', icon: '💻' },
+    { id: 'plang', name: '编程语言演进', icon: '📜' },
   ];
 
   const renderContent = () => {
@@ -37,6 +39,8 @@ function App() {
         return <NetworkLesson />;
       case 'arithmetic':
         return <ComputerArithmeticLesson />;
+      case 'plang':
+        return <ProgrammingLanguageLesson />;
       default:
         return <RgbPalette />;
     }
