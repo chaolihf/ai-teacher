@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gcc *)",
+      "Bash(rectangle_area.exe)"
+    ]
+  },
+  "$version": 4
+}
